@@ -1,13 +1,13 @@
 .hero {
   position: relative;
-  min-height: 100svh;
-  padding: calc(var(--nav-height) + 2.5rem) var(--page-gutter) 2rem;
+  min-height: max(100svh, 52rem);
+  padding: calc(var(--nav-height) + 2.5rem) var(--page-gutter) 9rem;
   overflow: hidden;
 }
 
 .imageWrap {
   position: absolute;
-  inset: var(--nav-height) 0 0 44%;
+  inset: var(--nav-height) 0 7rem 44%;
   overflow: hidden;
   background: var(--clay-pale);
 }
@@ -70,18 +70,22 @@
 .metrics {
   position: absolute;
   z-index: 3;
-  right: var(--page-gutter);
-  bottom: 2rem;
-  left: var(--page-gutter);
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: grid;
+  min-height: 7rem;
+  align-items: center;
   margin: 0;
-  padding: 1rem 0 0;
-  border-top: 1px solid color-mix(in srgb, white 50%, var(--green));
+  padding: 1.25rem var(--page-gutter);
+  background: var(--green);
+  gap: clamp(1rem, 3vw, 3rem);
   grid-template-columns: repeat(4, 1fr);
 }
 
 .metrics div {
-  padding-right: 1.5rem;
+  min-width: 0;
+  padding-right: clamp(0.5rem, 2vw, 1.5rem);
 }
 
 .metrics dt {
@@ -102,7 +106,7 @@
   .hero {
     display: flex;
     min-height: auto;
-    padding-top: calc(var(--nav-height) + 1.25rem);
+    padding: calc(var(--nav-height) + 1.25rem) var(--page-gutter) 0;
     flex-direction: column;
   }
 
@@ -134,6 +138,7 @@
     bottom: auto;
     left: auto;
     order: 3;
+    min-height: auto;
     margin: 0 calc(var(--page-gutter) * -1);
     padding: 1.5rem var(--page-gutter);
     border: 0;

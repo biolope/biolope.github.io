@@ -31,7 +31,6 @@
 
 .portrait img {
   width: 68%;
-  max-width: 12rem;
   aspect-ratio: 1;
   border: 2px solid rgba(255, 255, 255, 0.48);
   border-radius: 50%;

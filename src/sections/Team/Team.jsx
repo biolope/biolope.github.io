@@ -17,9 +17,8 @@ export default function Team() {
       <div className={styles.founders}>
         {founders.map((founder, index) => (
           <Reveal className={styles.founder} key={founder.name}>
-            <div className={styles.portrait} aria-label={`${founder.name} portrait placeholder`}>
-              <span>{founder.initials}</span>
-              <small>Portrait forthcoming</small>
+            <div className={styles.portrait}>
+              <img src={founder.portrait} alt={`Portrait of ${founder.name}`} />
             </div>
             <p className={styles.index}>{String(index + 1).padStart(2, "0")}</p>
             <h3>{founder.name}</h3>

@@ -89,6 +89,27 @@ def main() -> None:
             }
         )
 
+    team_assets = [
+        ("team/julia.webp", "Julia.jpg", "Julia Larikova"),
+        ("team/niklas.webp", "Niklas.jpg", "Niklas Ebert"),
+        ("team/martin.webp", "Martin.jfif", "Martin Slepicka"),
+        ("team/alex.webp", "Alex.webp", "Alexander Haynack"),
+    ]
+    for public_path, source_name, person in team_assets:
+        source_path = SOURCE / source_name
+        destination = OUTPUT / public_path
+        save_webp(source_path, destination, 900, 90)
+        manifest.append(
+            {
+                "id": f"{Path(public_path).stem}-portrait",
+                "publicFile": f"/content/{public_path}",
+                "source": str(source_path.relative_to(ROOT)).replace("\\", "/"),
+                "credit": "Team-supplied portrait",
+                "kind": f"temporary portrait of {person}",
+                "status": "temporary",
+            }
+        )
+
     habitat_source = SOURCE / "press-package" / "excluded(conference)" / "ECOLOPES_axonometry.png"
     habitat_destination = OUTPUT / "impact" / "habitat" / "bird-habitat-axonometry.webp"
     with Image.open(habitat_source) as image:

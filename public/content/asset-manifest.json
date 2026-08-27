@@ -56,6 +56,38 @@
     "status": "real"
   },
   {
+    "id": "julia-portrait",
+    "publicFile": "/content/team/julia.webp",
+    "source": "pitch_data/Julia.jpg",
+    "credit": "Team-supplied portrait",
+    "kind": "temporary portrait of Julia Larikova",
+    "status": "temporary"
+  },
+  {
+    "id": "niklas-portrait",
+    "publicFile": "/content/team/niklas.webp",
+    "source": "pitch_data/Niklas.jpg",
+    "credit": "Team-supplied portrait",
+    "kind": "temporary portrait of Niklas Ebert",
+    "status": "temporary"
+  },
+  {
+    "id": "martin-portrait",
+    "publicFile": "/content/team/martin.webp",
+    "source": "pitch_data/Martin.jfif",
+    "credit": "Team-supplied portrait",
+    "kind": "temporary portrait of Martin Slepicka",
+    "status": "temporary"
+  },
+  {
+    "id": "alex-portrait",
+    "publicFile": "/content/team/alex.webp",
+    "source": "pitch_data/Alex.webp",
+    "credit": "Team-supplied portrait",
+    "kind": "temporary portrait of Alexander Haynack",
+    "status": "temporary"
+  },
+  {
     "id": "bird-habitat-axonometry",
     "publicFile": "/content/impact/habitat/bird-habitat-axonometry.webp",
     "source": "pitch_data/press-package/excluded(conference)/ECOLOPES_axonometry.png",

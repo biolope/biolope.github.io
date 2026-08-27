@@ -1,0 +1,48 @@
+.header {
+  display: grid;
+  align-items: start;
+  gap: 1.5rem clamp(2rem, 6vw, 8rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr);
+}
+
+.header :global(.eyebrow) {
+  grid-column: 1 / -1;
+}
+
+.header h2 {
+  max-width: 13ch;
+  margin: 0;
+  color: var(--green);
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 6.8rem);
+  font-weight: 520;
+  letter-spacing: -0.058em;
+  line-height: 0.94;
+}
+
+.body {
+  max-width: 40rem;
+  margin: 0.25rem 0 0;
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.4vw, 1.22rem);
+  line-height: 1.65;
+}
+
+.inverse h2,
+.inverse .body {
+  color: white;
+}
+
+.inverse :global(.eyebrow) {
+  color: #b9d5c8;
+}
+
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .header h2 {
+    font-size: clamp(2.8rem, 14vw, 4.5rem);
+  }
+}

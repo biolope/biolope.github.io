@@ -1,0 +1,103 @@
+:root {
+  --paper: #f3f1ea;
+  --paper-warm: #e8e2d5;
+  --green: #143e33;
+  --green-bright: #1d5a48;
+  --ink: #1e2824;
+  --ink-soft: #49544f;
+  --clay: #c7b397;
+  --clay-pale: #ded3c2;
+  --thermal: #d85e35;
+  --line: rgba(20, 62, 51, 0.2);
+  --nav-height: 4.75rem;
+  --page-gutter: clamp(1.25rem, 4vw, 4.5rem);
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--paper);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--thermal);
+  outline-offset: 4px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--green-bright);
+  font-size: 0.76rem;
+  font-weight: 760;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 2.9rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.buttonPrimary {
+  background: var(--green);
+  color: white;
+}
+
+.buttonPrimary:hover {
+  background: var(--green-bright);
+}
+
+.textLink {
+  color: var(--green);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

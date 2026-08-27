@@ -1,0 +1,377 @@
+.story {
+  position: relative;
+  height: 460vh;
+  margin-top: 4rem;
+}
+
+.desktopStory,
+.stickyFrame {
+  height: 100%;
+}
+
+.stickyFrame {
+  position: sticky;
+  top: var(--nav-height);
+  display: grid;
+  height: calc(100vh - var(--nav-height));
+  min-height: 42rem;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 7rem);
+  grid-template-columns: minmax(18rem, 0.72fr) minmax(28rem, 1.28fr);
+}
+
+.copy {
+  position: relative;
+  z-index: 2;
+  padding-left: var(--page-gutter);
+}
+
+.stepNumber {
+  display: block;
+  margin-bottom: 3rem;
+  color: #9cbcaf;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.stepLabel {
+  margin: 0 0 0.75rem;
+  color: #b9d5c8;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.copy h3 {
+  max-width: 12ch;
+  margin: 0;
+  color: white;
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 4.1vw, 5rem);
+  font-weight: 520;
+  letter-spacing: -0.052em;
+  line-height: 0.98;
+}
+
+.stepBody {
+  max-width: 32rem;
+  margin: 1.5rem 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.status {
+  display: inline-flex;
+  margin: 1.5rem 0 0;
+  padding: 0.42rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.stage {
+  position: relative;
+  height: min(72vh, 47rem);
+  min-height: 34rem;
+  margin-right: var(--page-gutter);
+  overflow: hidden;
+  background: #d8cdbb;
+  isolation: isolate;
+}
+
+.facadeImage,
+.manufacturingLayer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facadeImage {
+  position: absolute;
+  inset: 0;
+  filter: saturate(0.65) contrast(1.03);
+  transition: filter 700ms ease, opacity 700ms ease, transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.facadeGrid {
+  position: absolute;
+  inset: 7% 16%;
+  display: grid;
+  gap: 2px;
+  opacity: 0;
+  perspective: 900px;
+  transition: opacity 600ms ease;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.facadeGrid span {
+  background: linear-gradient(135deg, #f0e7d9 0 48%, #a28d70 49% 53%, #d9c8af 54%);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  filter: drop-shadow(5px 8px 4px rgba(20, 32, 27, 0.22));
+  transform: rotateY(calc((var(--tile-index) % 3 - 1) * 7deg));
+}
+
+.sunArc {
+  position: absolute;
+  inset: 8% 7% auto auto;
+  width: 6.5rem;
+  height: 6.5rem;
+  border: 1px solid rgba(255, 240, 189, 0.7);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-12rem, 7rem);
+  transition: opacity 500ms ease, transform 1100ms ease;
+}
+
+.sunArc span {
+  position: absolute;
+  inset: 35%;
+  border-radius: 50%;
+  background: #ffe7a4;
+  box-shadow: 0 0 3rem rgba(255, 218, 121, 0.8);
+}
+
+.thermalLayer,
+.engineeringLayer,
+.manufacturingLayer,
+.qaLayer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 700ms ease;
+}
+
+.thermalLayer {
+  display: grid;
+  padding: 8%;
+  align-content: end;
+  background: linear-gradient(135deg, rgba(13, 51, 92, 0.72), rgba(25, 142, 154, 0.45) 40%, rgba(237, 117, 45, 0.58) 78%, rgba(202, 43, 46, 0.74));
+  mix-blend-mode: normal;
+}
+
+.thermalLayer img {
+  width: min(32rem, 78%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.28);
+}
+
+.thermalLayer span,
+.stageLabel,
+.engineeringLayer p,
+.qaLayer p {
+  color: white;
+  font-size: 0.64rem;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.thermalLayer span {
+  margin-top: 0.65rem;
+}
+
+.engineeringLayer {
+  background: radial-gradient(circle at 68% 33%, rgba(230, 104, 59, 0.86), transparent 24%), linear-gradient(150deg, rgba(10, 43, 55, 0.2), rgba(8, 31, 35, 0.85));
+}
+
+.mesh {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(181, 225, 210, 0.34) 1px, transparent 1px), linear-gradient(90deg, rgba(181, 225, 210, 0.34) 1px, transparent 1px), linear-gradient(45deg, transparent 49.5%, rgba(181, 225, 210, 0.24) 50%, transparent 50.5%);
+  background-size: 5rem 5rem, 5rem 5rem, 7rem 7rem;
+  transform: perspective(700px) rotateX(3deg) rotateY(-8deg) scale(1.1);
+}
+
+.engineeringLayer > span {
+  position: absolute;
+  top: calc(12% + (var(--node-index) % 5) * 17%);
+  left: calc(11% + (var(--node-index) % 7) * 12%);
+  width: calc(0.45rem + (var(--node-index) % 3) * 0.25rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f08d5d;
+  box-shadow: 0 0 1.25rem rgba(240, 141, 93, 0.9);
+}
+
+.engineeringLayer p,
+.qaLayer p {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 1.4rem;
+}
+
+.manufacturingLayer {
+  background: #101715;
+}
+
+.manufacturingLayer img {
+  filter: saturate(0.75) contrast(1.08);
+}
+
+.printPath {
+  position: absolute;
+  right: 7%;
+  bottom: 12%;
+  width: 43%;
+  height: 24%;
+  border: 2px solid #ead5b5;
+  border-top-width: 0.5rem;
+  box-shadow: 0 0 1.5rem rgba(234, 213, 181, 0.42);
+  transform: skewY(-9deg);
+}
+
+.qaLayer {
+  background: rgba(8, 31, 35, 0.78);
+}
+
+.pointCloud {
+  position: absolute;
+  inset: 8%;
+  background-image: radial-gradient(circle, rgba(188, 229, 213, 0.82) 0 1px, transparent 1.5px);
+  background-size: 12px 12px;
+  mask-image: linear-gradient(135deg, transparent 4%, black 28% 80%, transparent 96%);
+  transform: perspective(650px) rotateY(-13deg);
+}
+
+.targetContour {
+  position: absolute;
+  inset: 18% 25%;
+  border: 1px solid #f2ad75;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  box-shadow: 0 0 2rem rgba(242, 173, 117, 0.55);
+}
+
+.stageLabel {
+  position: absolute;
+  z-index: 8;
+  top: 1.1rem;
+  right: 1.1rem;
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.5rem 0.65rem;
+  background: rgba(8, 31, 35, 0.68);
+}
+
+.stage[data-state="design"] .facadeGrid,
+.stage[data-state="simulate"] .sunArc,
+.stage[data-state="simulate"] .thermalLayer,
+.stage[data-state="engineer"] .engineeringLayer,
+.stage[data-state="manufacture"] .manufacturingLayer,
+.stage[data-state="validate"] .qaLayer {
+  opacity: 1;
+}
+
+.stage[data-state="design"] .facadeImage {
+  opacity: 0.35;
+  transform: scale(1.05);
+}
+
+.stage[data-state="simulate"] .sunArc {
+  transform: translate(0, 0);
+}
+
+.stage[data-state="simulate"] .facadeImage {
+  filter: saturate(0.25) contrast(1.25);
+}
+
+.stage[data-state="engineer"] .facadeImage,
+.stage[data-state="manufacture"] .facadeImage,
+.stage[data-state="validate"] .facadeImage {
+  opacity: 0.25;
+}
+
+.progress {
+  position: absolute;
+  right: calc(var(--page-gutter) + 0.8rem);
+  bottom: 2rem;
+  left: calc(44% + 0.8rem);
+  z-index: 9;
+  display: grid;
+  gap: 0.35rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.progress span {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.progress .complete {
+  background: white;
+}
+
+.mobileStory {
+  display: none;
+}
+
+@media (max-width: 900px), (prefers-reduced-motion: reduce) {
+  .story {
+    height: auto;
+  }
+
+  .desktopStory {
+    display: none;
+  }
+
+  .mobileStory {
+    display: block;
+    padding: 0 var(--page-gutter) 5rem;
+  }
+
+  .mobileStory .stage {
+    height: min(70svh, 38rem);
+    min-height: 28rem;
+    margin: 0 0 3rem;
+  }
+
+  .mobileStory ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .mobileStory li {
+    display: grid;
+    padding: 1.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 1.25rem;
+    grid-template-columns: 2rem 1fr;
+  }
+
+  .mobileStory li > span {
+    color: #9cbcaf;
+    font-family: var(--font-display);
+  }
+
+  .mobileStory li p:first-child {
+    margin: 0 0 0.5rem;
+    color: #b9d5c8;
+    font-size: 0.7rem;
+    font-weight: 750;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .mobileStory h3 {
+    margin: 0;
+    color: white;
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 520;
+    line-height: 1;
+  }
+
+  .mobileStory li p:not(:first-child) {
+    color: rgba(255, 255, 255, 0.68);
+    line-height: 1.6;
+  }
+
+  .mobileStory small {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

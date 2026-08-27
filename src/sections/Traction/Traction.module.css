@@ -1,0 +1,128 @@
+.section {
+  padding: clamp(6rem, 12vw, 11rem) var(--page-gutter);
+  background: var(--green);
+  color: white;
+}
+
+.section :global(.eyebrow) {
+  color: #b9d5c8;
+}
+
+.intro {
+  display: grid;
+  gap: 1.5rem clamp(2rem, 6vw, 8rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr);
+}
+
+.intro :global(.eyebrow) {
+  grid-column: 1 / -1;
+}
+
+.intro h2 {
+  max-width: 13ch;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 6.8rem);
+  font-weight: 520;
+  letter-spacing: -0.058em;
+  line-height: 0.94;
+}
+
+.intro > p:last-child {
+  max-width: 36rem;
+  margin: 0.25rem 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: clamp(1rem, 1.4vw, 1.22rem);
+  line-height: 1.65;
+}
+
+.metrics {
+  display: grid;
+  padding: 0;
+  margin: clamp(5rem, 9vw, 9rem) 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.metric {
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 3rem) 0 0;
+}
+
+.metric + .metric {
+  padding-left: clamp(1rem, 3vw, 3rem);
+  border-left: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.metric dt {
+  display: flex;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  flex-direction: column;
+}
+
+.metric dt span {
+  margin-bottom: 1.4rem;
+  color: white;
+  font-family: var(--font-display);
+  font-size: clamp(4.5rem, 9vw, 9rem);
+  font-weight: 520;
+  letter-spacing: -0.065em;
+  line-height: 0.78;
+  text-transform: none;
+}
+
+.metric dd {
+  max-width: 22rem;
+  margin: 1.3rem 0 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.note {
+  display: grid;
+  margin-top: clamp(4rem, 8vw, 8rem);
+  gap: 1rem clamp(2rem, 5vw, 6rem);
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  grid-template-columns: minmax(9rem, 0.3fr) 1fr;
+}
+
+.note span {
+  color: #b9d5c8;
+  font-size: 0.66rem;
+  font-weight: 760;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.note p {
+  max-width: 55rem;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+@media (max-width: 760px) {
+  .intro,
+  .note {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .metric,
+  .metric + .metric {
+    padding: 2.5rem 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    border-left: 0;
+  }
+}

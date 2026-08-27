@@ -1,0 +1,171 @@
+.section {
+  padding: clamp(6rem, 12vw, 11rem) var(--page-gutter);
+}
+
+.thermal {
+  display: grid;
+  margin-top: clamp(5rem, 10vw, 10rem);
+  align-items: end;
+  gap: clamp(2rem, 6vw, 7rem);
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
+}
+
+.metricValue {
+  margin: 0;
+  color: var(--thermal);
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 11vw, 11rem);
+  font-weight: 520;
+  letter-spacing: -0.07em;
+  line-height: 0.8;
+}
+
+.metricLabel {
+  max-width: 20rem;
+  margin: 1.2rem 0 2.5rem;
+  color: var(--green);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.body {
+  max-width: 40rem;
+  color: var(--ink-soft);
+  font-size: 1.04rem;
+  line-height: 1.66;
+}
+
+.note {
+  max-width: 39rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: #68736e;
+  font-size: 0.72rem;
+  line-height: 1.55;
+}
+
+.thermalFigure {
+  min-height: 28rem;
+}
+
+.thermalFigure figure {
+  height: 100%;
+  min-height: 28rem;
+}
+
+.thermalFigure img {
+  object-fit: contain !important;
+  background: #16273a;
+}
+
+.habitat {
+  display: grid;
+  margin-top: clamp(8rem, 14vw, 14rem);
+  align-items: center;
+  gap: clamp(3rem, 7vw, 8rem);
+  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+}
+
+.habitatImages {
+  display: grid;
+  align-items: end;
+  gap: 1rem;
+  grid-template-columns: 1fr 0.78fr;
+}
+
+.habitatImages > div:first-child {
+  height: min(65vw, 46rem);
+}
+
+.habitatImages > div:last-child {
+  height: min(48vw, 34rem);
+}
+
+.habitatImages figure {
+  height: 100%;
+}
+
+.habitatCopy h3,
+.additionalImpact h3 {
+  margin: 0.75rem 0 1.4rem;
+  color: var(--green);
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 4.8rem);
+  font-weight: 520;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.additionalImpact {
+  display: grid;
+  margin-top: clamp(7rem, 12vw, 12rem);
+  border-top: 1px solid var(--line);
+  grid-template-columns: 1fr 1fr;
+}
+
+.material,
+.assessment {
+  padding: clamp(2.5rem, 5vw, 5rem) clamp(0rem, 4vw, 4rem) 0;
+}
+
+.material {
+  border-right: 1px solid var(--line);
+}
+
+.material .metricValue {
+  font-size: clamp(4rem, 8vw, 8rem);
+}
+
+.material p:last-child,
+.assessment p:last-child {
+  max-width: 34rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+@media (max-width: 820px) {
+  .thermal,
+  .habitat {
+    grid-template-columns: 1fr;
+  }
+
+  .thermalFigure {
+    min-height: auto;
+  }
+
+  .habitatImages {
+    order: 2;
+  }
+
+  .habitatCopy {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .habitatImages {
+    grid-template-columns: 1fr;
+  }
+
+  .habitatImages > div:first-child,
+  .habitatImages > div:last-child {
+    height: 65svh;
+  }
+
+  .habitatImages > div:last-child {
+    width: 78%;
+    margin-left: auto;
+  }
+
+  .additionalImpact {
+    grid-template-columns: 1fr;
+  }
+
+  .material {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}

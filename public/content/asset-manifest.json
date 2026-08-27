@@ -1,0 +1,76 @@
+[
+  {
+    "id": "demonstrator-hero",
+    "publicFile": "/content/hero/demonstrator-hero.webp",
+    "source": "pitch_data/press-package/Fotos/DSC_9596 Kopie 2.jpg",
+    "credit": "Julia Larikova",
+    "kind": "photograph",
+    "status": "real"
+  },
+  {
+    "id": "demonstrator-summer",
+    "publicFile": "/content/product/demonstrator-summer.webp",
+    "source": "pitch_data/press-package/Fotos/DSC_7535 Kopie.jpg",
+    "credit": "Julia Larikova",
+    "kind": "photograph",
+    "status": "real"
+  },
+  {
+    "id": "facade-depth-detail",
+    "publicFile": "/content/product/facade-depth-detail.webp",
+    "source": "pitch_data/press-package/Fotos/DSC_7608 Kopie 2.jpg",
+    "credit": "Julia Larikova",
+    "kind": "photograph",
+    "status": "real"
+  },
+  {
+    "id": "facade-habitat-detail",
+    "publicFile": "/content/impact/habitat/facade-habitat-detail.webp",
+    "source": "pitch_data/press-package/Fotos/DSC_9613 Kopie.jpg",
+    "credit": "Julia Larikova",
+    "kind": "photograph",
+    "status": "real"
+  },
+  {
+    "id": "full-scale-demonstrator",
+    "publicFile": "/content/validation/full-scale-demonstrator.webp",
+    "source": "pitch_data/press-package/Fotos/DSC_9600 Kopie.jpg",
+    "credit": "Julia Larikova",
+    "kind": "photograph",
+    "status": "real"
+  },
+  {
+    "id": "robotic-printing",
+    "publicFile": "/content/technology/manufacturing/robotic-printing.webp",
+    "source": "pitch_data/press-package/Fotos/DSC_8311.jpg",
+    "credit": "Julia Larikova",
+    "kind": "photograph",
+    "status": "real"
+  },
+  {
+    "id": "demonstrator-street-view",
+    "publicFile": "/content/contact/demonstrator-street-view.webp",
+    "source": "pitch_data/press-package/Fotos/DSC_9975 Kopie.jpg",
+    "credit": "Julia Larikova",
+    "kind": "photograph",
+    "status": "real"
+  },
+  {
+    "id": "bat-shelter-prototype",
+    "publicFile": "/content/impact/habitat/bat-shelter-prototype.webp",
+    "source": "pitch_data/March_MIT/Multispezies Fassaden_10min.pptx",
+    "sourceLocation": "slide 13, image17.jpg, right-hand photograph",
+    "credit": "Lisa Clausen-Schaumann, Marie Valerie Krudl, Cederik Mulkers",
+    "kind": "photograph",
+    "status": "functional prototype"
+  },
+  {
+    "id": "measured-facade-reference",
+    "publicFile": "/content/impact/thermal/measured-facade-reference.webp",
+    "source": "pitch_data/AM_Facades_with_clay_Iteration2.pdf",
+    "sourceLocation": "Figure 30",
+    "credit": "Larikova et al., preprint under review",
+    "kind": "thermal measurement",
+    "status": "measured"
+  }
+]

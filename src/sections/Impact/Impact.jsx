@@ -42,7 +42,7 @@ export default function Impact() {
               className={styles.habitatConcept}
               src="/content/impact/habitat/bird-habitat-axonometry.webp"
               alt="Concept axonometry showing nesting cavities integrated behind ceramic façade elements"
-              credit="Concept axonometry · ECOLOPES project"
+              credit="Concept axonometry of a nesting habitat"
             />
           </Reveal>
         </div>

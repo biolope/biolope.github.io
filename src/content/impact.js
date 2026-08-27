@@ -9,7 +9,7 @@ export const impactContent = {
   },
   habitat: {
     title: "Façades designed for urban wildlife.",
-    body: "The Munich demonstrator incorporates habitat typologies for house sparrows, black redstarts and hedgehogs. A separate functional prototype demonstrates how shelter spaces for bats can be integrated into ceramic façade elements.",
+    body: "The Munich demonstrator incorporates habitat typologies for house sparrows, black redstarts and hedgehogs. Its geometry connects visible openings with protected nesting and shelter spaces behind the ceramic surface.",
     note: "Occupancy and long-term ecological effects have not yet been verified.",
   },
   material: {

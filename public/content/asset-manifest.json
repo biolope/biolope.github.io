@@ -56,13 +56,12 @@
     "status": "real"
   },
   {
-    "id": "bat-shelter-prototype",
-    "publicFile": "/content/impact/habitat/bat-shelter-prototype.webp",
-    "source": "pitch_data/March_MIT/Multispezies Fassaden_10min.pptx",
-    "sourceLocation": "slide 13, image17.jpg, right-hand photograph",
-    "credit": "Lisa Clausen-Schaumann, Marie Valerie Krudl, Cederik Mulkers",
-    "kind": "photograph",
-    "status": "functional prototype"
+    "id": "bird-habitat-axonometry",
+    "publicFile": "/content/impact/habitat/bird-habitat-axonometry.webp",
+    "source": "pitch_data/press-package/excluded(conference)/ECOLOPES_axonometry.png",
+    "credit": "ECOLOPES project",
+    "kind": "concept axonometry",
+    "status": "illustrative; publication permission to confirm"
   },
   {
     "id": "measured-facade-reference",
@@ -72,5 +71,31 @@
     "credit": "Larikova et al., preprint under review",
     "kind": "thermal measurement",
     "status": "measured"
+  },
+  {
+    "id": "parametric-control-points",
+    "publicFile": "/content/technology/design/parametric-control-points.webp",
+    "source": "pitch_data/AM_Facades_with_clay_Iteration2.pdf",
+    "sourceLocation": "Figure 4",
+    "credit": "Larikova et al., preprint under review",
+    "kind": "parametric element-design illustration",
+    "status": "real project evidence"
+  },
+  {
+    "id": "printed-scan-comparison",
+    "publicFile": "/content/technology/validation/printed-scan-comparison.webp",
+    "source": "pitch_data/AM_Facades_with_clay_Iteration2.pdf",
+    "sourceLocation": "Figure 20",
+    "credit": "Larikova et al., preprint under review",
+    "kind": "printed specimen and 3D scan comparison",
+    "status": "real project evidence"
+  },
+  {
+    "id": "facade-fem-3d",
+    "publicFile": "/content/technology/engineering/facade-fem-3d.webp",
+    "source": "pitch_data/facade_fem_3d.png",
+    "credit": "BioLope project material",
+    "kind": "FEM visualization",
+    "status": "illustrative example"
   }
 ]

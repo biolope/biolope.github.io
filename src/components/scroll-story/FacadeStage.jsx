@@ -1,8 +1,5 @@
 import styles from "./ScrollFacadeStory.module.css";
 
-const tileCount = 48;
-const nodeCount = 14;
-
 export default function FacadeStage({ activeStep }) {
   const state = ["design", "simulate", "engineer", "manufacture", "validate"][activeStep];
 
@@ -14,10 +11,12 @@ export default function FacadeStage({ activeStep }) {
         alt=""
       />
 
-      <div className={styles.facadeGrid}>
-        {Array.from({ length: tileCount }, (_, index) => (
-          <span key={index} style={{ "--tile-index": index }} />
-        ))}
+      <div className={`${styles.evidenceLayer} ${styles.designLayer}`}>
+        <img
+          src="/content/technology/design/parametric-control-points.webp"
+          alt=""
+        />
+        <p>Parametric control points</p>
       </div>
 
       <div className={styles.sunArc}>
@@ -26,15 +25,12 @@ export default function FacadeStage({ activeStep }) {
 
       <div className={styles.thermalLayer}>
         <img src="/content/impact/thermal/measured-facade-reference.webp" alt="" />
-        <span>Measured evidence</span>
+        <span>Measured thermal data · model input</span>
       </div>
 
-      <div className={styles.engineeringLayer}>
-        <div className={styles.mesh} />
-        {Array.from({ length: nodeCount }, (_, index) => (
-          <span key={index} style={{ "--node-index": index }} />
-        ))}
-        <p>Illustrative engineering view</p>
+      <div className={`${styles.evidenceLayer} ${styles.engineeringLayer}`}>
+        <img src="/content/technology/engineering/facade-fem-3d.webp" alt="" />
+        <p>Illustrative FEM example</p>
       </div>
 
       <div className={styles.manufacturingLayer}>
@@ -42,10 +38,9 @@ export default function FacadeStage({ activeStep }) {
         <div className={styles.printPath} />
       </div>
 
-      <div className={styles.qaLayer}>
-        <div className={styles.pointCloud} />
-        <div className={styles.targetContour} />
-        <p>QA workflow in development</p>
+      <div className={`${styles.evidenceLayer} ${styles.qaLayer}`}>
+        <img src="/content/technology/validation/printed-scan-comparison.webp" alt="" />
+        <p>Printed specimen · 3D scan comparison</p>
       </div>
 
       <div className={styles.stageLabel}>

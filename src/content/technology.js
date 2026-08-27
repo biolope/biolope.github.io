@@ -18,7 +18,7 @@ export const storySteps = [
     number: "02",
     label: "Simulate",
     title: "Performance becomes a design input.",
-    body: "Thermal workflows assess surface-temperature behaviour and help identify where geometric self-shading can create meaningful effects.",
+    body: "Measured thermal data provide reference inputs for calibrating and validating a developing model that can assess façade performance under project-specific boundary conditions.",
     status: "Prototype workflow",
   },
   {
@@ -42,7 +42,7 @@ export const storySteps = [
     number: "05",
     label: "Validate",
     title: "Closing the loop from design to evidence.",
-    body: "Standards-referenced testing is already underway; automated geometric QA and connected verification remain active development areas.",
+    body: "3D scanning and target-versus-actual deviation analysis quantify printed geometry. Faster automated QA and connected verification remain active development areas.",
     status: "Mixed maturity",
   },
 ];

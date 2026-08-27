@@ -39,9 +39,10 @@ export default function Impact() {
           </Reveal>
           <Reveal>
             <Figure
-              src="/content/impact/habitat/bat-shelter-prototype.webp"
-              alt="Functional 3D-printed prototype showing an integrated bat shelter cavity"
-              credit="Lisa Clausen-Schaumann · Marie Valerie Krudl · Cederik Mulkers"
+              className={styles.habitatConcept}
+              src="/content/impact/habitat/bird-habitat-axonometry.webp"
+              alt="Concept axonometry showing nesting cavities integrated behind ceramic façade elements"
+              credit="Concept axonometry · ECOLOPES project"
             />
           </Reveal>
         </div>

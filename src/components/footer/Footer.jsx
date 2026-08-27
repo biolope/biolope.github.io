@@ -15,7 +15,15 @@ export default function Footer() {
           ))}
         </ul>
       </div>
-      <p className={styles.meta}>A research-origin startup project from Munich · © 2026 BioLope</p>
+      <div className={styles.metaRow}>
+        <p className={styles.meta}>
+          A research-origin startup project from Munich · © 2026 BioLope
+        </p>
+        <nav className={styles.legalLinks} aria-label="Legal information">
+          <a href="/imprint/">Imprint / Impressum</a>
+          <a href="/privacy/">Privacy / Datenschutz</a>
+        </nav>
+      </div>
     </footer>
   );
 }

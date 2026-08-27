@@ -130,23 +130,53 @@
 }
 
 .evidenceLayer {
-  display: grid;
+  display: flex;
   padding: 8%;
-  align-content: end;
   background: linear-gradient(135deg, rgba(13, 51, 92, 0.72), rgba(25, 89, 83, 0.48) 48%, rgba(8, 31, 35, 0.78));
 }
 
-.evidenceLayer img {
-  width: min(30rem, 74%);
-  max-height: 68%;
+.evidenceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.evidenceCard img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 30rem;
   object-fit: contain;
   background: white;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.28);
 }
 
-.engineeringLayer img {
-  width: min(23rem, 56%);
+.designLayer {
+  align-items: center;
+  justify-content: center;
+}
+
+.designLayer .evidenceCard {
+  width: min(34rem, 78%);
+}
+
+.engineeringLayer {
+  align-items: center;
+  padding-left: 13%;
+}
+
+.engineeringLayer .evidenceCard {
+  width: min(22rem, 54%);
+}
+
+.qaLayer {
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.qaLayer .evidenceCard {
+  width: min(42rem, 88%);
 }
 
 .thermalLayer {
@@ -176,8 +206,8 @@
   margin-top: 0.65rem;
 }
 
-.evidenceLayer p {
-  margin: 0.65rem 0 0;
+.evidenceCard p {
+  margin: 0;
 }
 
 .manufacturingLayer {

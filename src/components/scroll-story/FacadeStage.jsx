@@ -12,11 +12,13 @@ export default function FacadeStage({ activeStep }) {
       />
 
       <div className={`${styles.evidenceLayer} ${styles.designLayer}`}>
-        <img
-          src="/content/technology/design/parametric-control-points.webp"
-          alt=""
-        />
-        <p>Parametric control points</p>
+        <div className={styles.evidenceCard}>
+          <img
+            src="/content/technology/design/parametric-control-points.webp"
+            alt=""
+          />
+          <p>Parametric control points</p>
+        </div>
       </div>
 
       <div className={styles.sunArc}>
@@ -29,8 +31,10 @@ export default function FacadeStage({ activeStep }) {
       </div>
 
       <div className={`${styles.evidenceLayer} ${styles.engineeringLayer}`}>
-        <img src="/content/technology/engineering/facade-fem-3d.webp" alt="" />
-        <p>Illustrative FEM example</p>
+        <div className={styles.evidenceCard}>
+          <img src="/content/technology/engineering/facade-fem-3d.webp" alt="" />
+          <p>Illustrative FEM example</p>
+        </div>
       </div>
 
       <div className={styles.manufacturingLayer}>
@@ -39,8 +43,10 @@ export default function FacadeStage({ activeStep }) {
       </div>
 
       <div className={`${styles.evidenceLayer} ${styles.qaLayer}`}>
-        <img src="/content/technology/validation/printed-scan-comparison.webp" alt="" />
-        <p>Printed specimen · 3D scan comparison</p>
+        <div className={styles.evidenceCard}>
+          <img src="/content/technology/validation/printed-scan-comparison.webp" alt="" />
+          <p>Printed specimen · 3D scan comparison</p>
+        </div>
       </div>
 
       <div className={styles.stageLabel}>

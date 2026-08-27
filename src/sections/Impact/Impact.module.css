@@ -1,5 +1,5 @@
 .section {
-  padding: clamp(6rem, 12vw, 11rem) var(--page-gutter);
+  padding: clamp(4rem, 7vw, 7rem) var(--page-gutter) clamp(6rem, 12vw, 11rem);
 }
 
 .thermal {
@@ -48,7 +48,9 @@
 }
 
 .thermalFigure {
+  width: min(100%, 39rem);
   min-height: 28rem;
+  justify-self: end;
 }
 
 .thermalFigure figure {
@@ -133,6 +135,7 @@
   }
 
   .thermalFigure {
+    width: 100%;
     min-height: auto;
   }
 

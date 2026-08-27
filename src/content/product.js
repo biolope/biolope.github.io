@@ -4,7 +4,7 @@ export const productContent = {
   body: "Mounted on a standard ventilated façade substructure, BioLope combines adaptable ceramic geometries with a connected design-to-manufacturing workflow. Additive manufacturing enables differentiated depth, surface articulation and integrated functional spaces.",
   features: [
     ["01", "Project-specific geometry"],
-    ["02", "Ceramic materiality"],
+    ["02", "Recycled ceramic formulation"],
     ["03", "Ventilated façade compatibility"],
     ["04", "Functional mass customization"],
   ],

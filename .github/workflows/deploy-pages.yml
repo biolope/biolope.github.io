@@ -1,10 +1,8 @@
 name: Deploy website to GitHub Pages
 
 on:
-  # Automatic deployment is paused during content refinement.
-  # Uncomment these two lines to deploy every push to main again:
-  # push:
-  #   branches: [main]
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:

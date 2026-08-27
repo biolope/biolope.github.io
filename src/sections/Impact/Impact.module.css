@@ -48,7 +48,7 @@
 }
 
 .thermalFigure {
-  width: min(100%, 39rem);
+  width: 95%;
   min-height: 28rem;
   justify-self: end;
 }
@@ -61,6 +61,29 @@
 .thermalFigure img {
   object-fit: contain !important;
   background: #16273a;
+}
+
+.thermalFigure .evidenceFigure {
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  background: transparent;
+}
+
+.evidenceFigure img {
+  height: auto !important;
+}
+
+.evidenceFigure figcaption {
+  position: static;
+  max-width: none;
+  margin-top: 0.55rem;
+  padding: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.62rem;
+  line-height: 1.4;
+  text-align: right;
 }
 
 .habitat {

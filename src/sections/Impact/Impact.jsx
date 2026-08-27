@@ -20,6 +20,7 @@ export default function Impact() {
         </Reveal>
         <Reveal className={styles.thermalFigure}>
           <Figure
+            className={styles.evidenceFigure}
             src="/content/impact/thermal/measured-facade-reference.webp"
             alt="Thermal measurement comparing the cooler ceramic demonstrator with the warmer flat reference wall"
             credit="Measured in August 2025 · Larikova et al. · Preprint under review"

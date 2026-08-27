@@ -1,6 +1,6 @@
 export const heroContent = {
   eyebrow: "Digitally fabricated ceramic façades",
-  title: "From passive surface to performative architecture.",
+  title: "Building envelopes that shade, shelter and shape architecture.",
   body: "BioLope develops digitally designed, additively manufactured ceramic façade elements that combine architectural expression with measured thermal performance and integrated habitat opportunities.",
   image: "/content/hero/demonstrator-hero.webp",
   imageAlt: "Full-scale ceramic façade demonstrator installed in Munich",

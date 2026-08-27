@@ -64,17 +64,19 @@ export default function ScrollFacadeStory() {
       </div>
 
       <div className={styles.mobileStory}>
-        <FacadeStage activeStep={0} />
         <ol>
-          {storySteps.map((item) => (
+          {storySteps.map((item, index) => (
             <li key={item.id}>
-              <span>{item.number}</span>
-              <div>
-                <p>{item.label}</p>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-                <small>{item.status}</small>
+              <div className={styles.mobileCopy}>
+                <span>{item.number}</span>
+                <div>
+                  <p>{item.label}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                  <small>{item.status}</small>
+                </div>
               </div>
+              <FacadeStage activeStep={index} staticMode />
             </li>
           ))}
         </ol>

@@ -279,9 +279,9 @@
   }
 
   .mobileStory .stage {
-    height: min(70svh, 38rem);
-    min-height: 28rem;
-    margin: 0 0 3rem;
+    height: clamp(20rem, 86vw, 34rem);
+    min-height: 0;
+    margin: 2rem 0 0;
   }
 
   .mobileStory ol {
@@ -291,19 +291,26 @@
   }
 
   .mobileStory li {
-    display: grid;
-    padding: 1.75rem 0;
+    padding: 2.75rem 0 3.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .mobileStory li:last-child {
+    padding-bottom: 0;
+  }
+
+  .mobileCopy {
+    display: grid;
     gap: 1.25rem;
     grid-template-columns: 2rem 1fr;
   }
 
-  .mobileStory li > span {
+  .mobileCopy > span {
     color: #9cbcaf;
     font-family: var(--font-display);
   }
 
-  .mobileStory li p:first-child {
+  .mobileCopy p:first-child {
     margin: 0 0 0.5rem;
     color: #b9d5c8;
     font-size: 0.7rem;
@@ -321,12 +328,15 @@
     line-height: 1;
   }
 
-  .mobileStory li p:not(:first-child) {
+  .mobileCopy p:not(:first-child) {
+    margin-bottom: 0;
     color: rgba(255, 255, 255, 0.68);
     line-height: 1.6;
   }
 
   .mobileStory small {
+    display: block;
+    margin-top: 1rem;
     color: rgba(255, 255, 255, 0.5);
   }
 }

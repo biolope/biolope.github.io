@@ -8,6 +8,6 @@ export const heroContent = {
     { value: "12 m²", label: "full-scale demonstrator" },
     { value: "85", label: "ceramic elements" },
     { value: "up to 16 °C", label: "lower surface temperature" },
-    { value: "6", label: "Letters of Intent" },
+    { value: "3", label: "integrated habitat typologies" },
   ],
 };

@@ -1,7 +1,7 @@
 export const productContent = {
   eyebrow: "Product",
-  title: "A façade system shaped for place.",
-  body: "Mounted on a standard ventilated façade substructure, BioLope combines project-specific ceramic geometries with a digital design-to-manufacturing workflow. Additive manufacturing enables differentiated depth, surface articulation and integrated functional spaces.",
+  title: "Project-specific ceramic façades, digitally designed.",
+  body: "Mounted on a standard ventilated façade substructure, BioLope combines adaptable ceramic geometries with a connected design-to-manufacturing workflow. Additive manufacturing enables differentiated depth, surface articulation and integrated functional spaces.",
   features: [
     ["01", "Project-specific geometry"],
     ["02", "Ceramic materiality"],

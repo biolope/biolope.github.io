@@ -132,6 +132,8 @@
 .evidenceLayer {
   display: flex;
   padding: 8%;
+  align-items: flex-end;
+  justify-content: flex-start;
   background: linear-gradient(135deg, rgba(13, 51, 92, 0.72), rgba(25, 89, 83, 0.48) 48%, rgba(8, 31, 35, 0.78));
 }
 
@@ -152,31 +154,16 @@
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.28);
 }
 
-.designLayer {
-  align-items: center;
-  justify-content: center;
-}
-
 .designLayer .evidenceCard {
-  width: min(34rem, 78%);
-}
-
-.engineeringLayer {
-  align-items: center;
-  padding-left: 13%;
+  width: min(36rem, 82%);
 }
 
 .engineeringLayer .evidenceCard {
-  width: min(22rem, 54%);
-}
-
-.qaLayer {
-  align-items: flex-end;
-  justify-content: center;
+  width: min(27.5rem, 68%);
 }
 
 .qaLayer .evidenceCard {
-  width: min(42rem, 88%);
+  width: min(48.3rem, 100%);
 }
 
 .thermalLayer {
@@ -216,18 +203,6 @@
 
 .manufacturingLayer img {
   filter: saturate(0.75) contrast(1.08);
-}
-
-.printPath {
-  position: absolute;
-  right: 7%;
-  bottom: 12%;
-  width: 43%;
-  height: 24%;
-  border: 2px solid #ead5b5;
-  border-top-width: 0.5rem;
-  box-shadow: 0 0 1.5rem rgba(234, 213, 181, 0.42);
-  transform: skewY(-9deg);
 }
 
 .stageLabel {

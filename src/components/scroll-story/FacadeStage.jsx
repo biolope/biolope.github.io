@@ -26,7 +26,10 @@ export default function FacadeStage({ activeStep }) {
       </div>
 
       <div className={styles.thermalLayer}>
-        <img src="/content/impact/thermal/measured-facade-reference.webp" alt="" />
+        <img
+          src="/content/technology/simulate/measured-facade-reference.webp"
+          alt=""
+        />
         <span>Measured thermal data · model input</span>
       </div>
 
@@ -39,7 +42,6 @@ export default function FacadeStage({ activeStep }) {
 
       <div className={styles.manufacturingLayer}>
         <img src="/content/technology/manufacturing/robotic-printing.webp" alt="" />
-        <div className={styles.printPath} />
       </div>
 
       <div className={`${styles.evidenceLayer} ${styles.qaLayer}`}>

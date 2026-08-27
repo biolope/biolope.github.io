@@ -124,6 +124,22 @@ def main() -> None:
         }
     )
 
+    simulate_destination = (
+        OUTPUT / "technology" / "simulate" / "measured-facade-reference.webp"
+    )
+    save_paper_figure(paper_reader, 24, "Image182.jpg", simulate_destination, 1600, 90)
+    manifest.append(
+        {
+            "id": "simulate-measured-facade-reference",
+            "publicFile": "/content/technology/simulate/measured-facade-reference.webp",
+            "source": "pitch_data/AM_Facades_with_clay_Iteration2.pdf",
+            "sourceLocation": "Figure 30",
+            "credit": "Larikova et al., preprint under review",
+            "kind": "thermal measurement used as simulation reference input",
+            "status": "measured",
+        }
+    )
+
     technology_figures = [
         (
             "technology/design/parametric-control-points.webp",

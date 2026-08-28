@@ -20,7 +20,7 @@ export default function Validation() {
           <Figure
             src="/content/validation/full-scale-demonstrator.webp"
             alt="Full-scale ceramic façade demonstrator installed in Munich"
-            credit="Feierwerk Südpolstation, Munich · Photo: Julia Larikova"
+            credit="Feierwerk Südpolstation, Munich"
           />
         </Reveal>
 

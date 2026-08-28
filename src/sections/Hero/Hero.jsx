@@ -6,7 +6,6 @@ export default function Hero() {
     <section id="top" className={styles.hero}>
       <div className={styles.imageWrap}>
         <img src={heroContent.image} alt={heroContent.imageAlt} fetchPriority="high" />
-        <span className={styles.photoCredit}>Photo: Julia Larikova</span>
       </div>
       <div className={styles.content}>
         <p className="eyebrow">{heroContent.eyebrow}</p>

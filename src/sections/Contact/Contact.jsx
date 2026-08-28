@@ -22,12 +22,13 @@ export default function Contact() {
             Julia on LinkedIn <span aria-hidden="true">↗</span>
           </a>
         </div>
+        {/* The personal contact lines are retained for possible later use.
         <p className={styles.person}>
           Contact · {contactContent.person}
           <span>{contactContent.affiliation}</span>
         </p>
+        */}
       </div>
-      <span className={styles.credit}>Photo: Julia Larikova</span>
     </section>
   );
 }

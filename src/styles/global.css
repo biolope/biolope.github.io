@@ -28,6 +28,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: var(--nav-height);
+}
+
 body {
   min-width: 320px;
   margin: 0;

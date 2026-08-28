@@ -34,7 +34,7 @@ export default function Impact() {
             <Figure
               src="/content/impact/habitat/facade-habitat-detail.webp"
               alt="Ceramic façade elements with integrated nesting and shelter openings"
-              credit="Munich demonstrator · Photo: Julia Larikova"
+              credit="Munich demonstrator"
             />
           </Reveal>
           <Reveal>

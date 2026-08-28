@@ -1,7 +1,7 @@
 export const technologyContent = {
   eyebrow: "Technology",
   title: "One connected development workflow.",
-  body: "BioLope is developing an integrated workflow connecting computational design, performance simulation, structural assessment, robotic fabrication and quality assurance.",
+  body: "BioLope is a spin-off project emerging from doctoral research at the Technical University of Munich (TUM). We are developing an integrated workflow that connects computational design, climate-performance simulation, ceramic 3D printing and integrated quality assurance. A patent application is pending for an innovative ceramic printing nozzle designed to increase printing speed by a factor of two to three.",
 };
 
 export const storySteps = [
@@ -34,7 +34,7 @@ export const storySteps = [
     number: "04",
     label: "Manufacture",
     title: "Complexity produced without standard moulds.",
-    body: "Robotic ceramic extrusion, controlled drying and industrial firing turn differentiated digital geometries into physical façade elements.",
+    body: "Robotic ceramic 3D printing, controlled drying and industrial firing turn differentiated digital geometries into physical façade elements.",
     status: "Current capability",
   },
   {

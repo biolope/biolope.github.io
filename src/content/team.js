@@ -2,25 +2,29 @@ export const founders = [
   {
     name: "Julia Larikova",
     portrait: "/content/team/julia.webp",
-    role: "Architecture & Product Design",
-    bio: "Architect and researcher specializing in computational design, additive manufacturing and ceramic façade development.",
+    title: "CEO",
+    role: "Strategy & Product Design",
+    bio: "Architect and researcher specializing in computational design, ceramic 3D printing and façade development.",
   },
   {
     name: "Niklas Ebert",
     portrait: "/content/team/niklas.webp",
+    title: "CCO",
     role: "Business & Market Strategy",
     bio: "Leads market strategy, business-model development and the commercialization of BioLope’s façade system.",
   },
   {
     name: "Martin Slepicka",
     portrait: "/content/team/martin.webp",
-    role: "Manufacturing Technology",
+    title: "CTO",
+    role: "Hardware & Production",
     bio: "Develops the extrusion hardware, process control and manufacturing automation behind the ceramic 3D-printing workflow.",
   },
   {
     name: "Alexander Haynack",
     portrait: "/content/team/alex.webp",
-    role: "Materials, Engineering & Scientific Validation",
+    title: "CSO",
+    role: "Materials Development & Quality Assurance",
     bio: "Civil engineer and materials researcher focused on durability, simulation, quality assurance and the pathway toward certification.",
   },
 ];

@@ -1,17 +1,17 @@
 .section {
-  padding: clamp(6rem, 12vw, 11rem) var(--page-gutter) clamp(4rem, 7vw, 7rem);
+  padding: clamp(4rem, 8vw, 7rem) var(--page-gutter) clamp(3rem, 5vw, 5rem);
 }
 
 .visualGrid {
   display: grid;
-  margin-top: clamp(4rem, 8vw, 8rem);
+  margin-top: clamp(2.5rem, 4.5vw, 4.5rem);
   align-items: end;
   gap: 1.25rem;
   grid-template-columns: minmax(0, 1.35fr) minmax(15rem, 0.65fr);
 }
 
 .mainImage {
-  height: min(70vw, 48rem);
+  height: min(48vw, 36rem);
 }
 
 .mainImage figure,
@@ -20,13 +20,13 @@
 }
 
 .detailImage {
-  height: min(52vw, 35rem);
+  height: min(36vw, 27rem);
 }
 
 .features {
   display: grid;
   width: min(100%, 58rem);
-  margin: 2.5rem 0 0;
+  margin: 1.5rem 0 0;
   margin-left: auto;
   padding: 0;
   gap: 0 2rem;
@@ -64,12 +64,12 @@
   }
 
   .mainImage {
-    height: 70svh;
+    height: 58svh;
   }
 
   .detailImage {
     width: 76%;
-    height: 55svh;
+    height: 46svh;
     margin-left: auto;
   }
 

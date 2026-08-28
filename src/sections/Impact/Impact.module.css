@@ -1,11 +1,11 @@
 .section {
-  padding: clamp(4rem, 7vw, 7rem) var(--page-gutter) clamp(6rem, 12vw, 11rem);
+  padding: clamp(3.5rem, 6vw, 6rem) var(--page-gutter) clamp(4.5rem, 8vw, 8rem);
 }
 
 .thermal {
   display: grid;
-  margin-top: clamp(5rem, 10vw, 10rem);
-  align-items: end;
+  margin-top: clamp(3rem, 5.5vw, 5.5rem);
+  align-items: start;
   gap: clamp(2rem, 6vw, 7rem);
   grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
 }
@@ -88,7 +88,7 @@
 
 .habitat {
   display: grid;
-  margin-top: clamp(8rem, 14vw, 14rem);
+  margin-top: clamp(5rem, 8vw, 8rem);
   align-items: center;
   gap: clamp(3rem, 7vw, 8rem);
   grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
@@ -131,7 +131,7 @@
 
 .additionalImpact {
   display: grid;
-  margin-top: clamp(7rem, 12vw, 12rem);
+  margin-top: clamp(4rem, 7vw, 7rem);
   border-top: 1px solid var(--line);
   grid-template-columns: 1fr 1fr;
 }

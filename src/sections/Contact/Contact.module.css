@@ -1,10 +1,10 @@
 .section {
   position: relative;
   display: flex;
-  min-height: min(88rem, 92svh);
+  min-height: min(72rem, 82svh);
   align-items: flex-end;
   overflow: hidden;
-  padding: clamp(6rem, 10vw, 9rem) var(--page-gutter);
+  padding: clamp(4rem, 7vw, 7rem) var(--page-gutter);
   background: var(--green);
   color: white;
 }
@@ -102,7 +102,7 @@
 
 @media (max-width: 640px) {
   .section {
-    min-height: 88svh;
+    min-height: 78svh;
   }
 
   .overlay {

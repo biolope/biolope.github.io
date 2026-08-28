@@ -1,5 +1,5 @@
 .section {
-  padding-top: clamp(6rem, 10vw, 10rem);
+  padding-top: clamp(4rem, 7vw, 7rem);
   background: var(--green);
 }
 
@@ -8,8 +8,8 @@
 }
 
 .robotVisual {
-  height: clamp(22rem, 48vw, 42rem);
-  margin-top: clamp(2.5rem, 5vw, 5rem);
+  height: clamp(22rem, 44vw, 38rem);
+  margin-top: clamp(2rem, 3.5vw, 3.5rem);
   overflow: hidden;
 }
 

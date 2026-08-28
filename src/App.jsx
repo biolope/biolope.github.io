@@ -6,8 +6,8 @@ import Impact from "./sections/Impact/Impact";
 import Product from "./sections/Product/Product";
 import Team from "./sections/Team/Team";
 import Technology from "./sections/Technology/Technology";
-import Traction from "./sections/Traction/Traction";
-import Validation from "./sections/Validation/Validation";
+// import Traction from "./sections/Traction/Traction";
+// import Validation from "./sections/Validation/Validation";
 
 export default function App() {
   return (
@@ -18,8 +18,10 @@ export default function App() {
         <Product />
         <Impact />
         <Technology />
+        {/* Temporarily hidden for the compact pitch version.
         <Validation />
         <Traction />
+        */}
         <Team />
         <Contact />
       </main>

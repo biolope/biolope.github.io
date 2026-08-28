@@ -16,8 +16,8 @@ export default function Hero() {
           <a className="button buttonPrimary" href="#product">
             Explore the system
           </a>
-          <a className="textLink" href="#validation">
-            View the demonstrator <span aria-hidden="true">↘</span>
+          <a className="textLink" href="#impact">
+            View the evidence <span aria-hidden="true">↘</span>
           </a>
         </div>
       </div>

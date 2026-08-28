@@ -7,6 +7,24 @@
   padding: 0 var(--page-gutter);
 }
 
+.robotVisual {
+  height: clamp(22rem, 48vw, 42rem);
+  margin-top: clamp(2.5rem, 5vw, 5rem);
+  overflow: hidden;
+}
+
+.robotVisual figure {
+  height: 100%;
+  background: #101715;
+}
+
+.robotVisual img {
+  width: 145%;
+  max-width: none;
+  object-fit: cover;
+  object-position: left 72%;
+}
+
 .vision {
   display: grid;
   padding: clamp(5rem, 10vw, 9rem) var(--page-gutter);
@@ -42,6 +60,14 @@
 }
 
 @media (max-width: 760px) {
+  .robotVisual {
+    height: clamp(20rem, 78vw, 31rem);
+  }
+
+  .robotVisual img {
+    width: 150%;
+  }
+
   .vision {
     grid-template-columns: 1fr;
   }

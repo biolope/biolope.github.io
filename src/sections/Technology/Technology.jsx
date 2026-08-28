@@ -1,4 +1,5 @@
-import ScrollFacadeStory from "../../components/scroll-story/ScrollFacadeStory";
+// import ScrollFacadeStory from "../../components/scroll-story/ScrollFacadeStory";
+import Figure from "../../components/ui/Figure";
 import Reveal from "../../components/ui/Reveal";
 import SectionHeader from "../../components/ui/SectionHeader";
 import { technologyContent } from "../../content/technology";
@@ -12,6 +13,15 @@ export default function Technology() {
           <SectionHeader {...technologyContent} inverse />
         </Reveal>
       </div>
+
+      <Reveal className={styles.robotVisual}>
+        <Figure
+          src="/content/technology/manufacturing/robotic-printing.webp"
+          alt="Robotic ceramic 3D printing of a project-specific façade element"
+        />
+      </Reveal>
+
+      {/* Temporarily hidden for the compact pitch version.
       <ScrollFacadeStory />
       <div className={styles.vision}>
         <p>Long-term vision</p>
@@ -21,6 +31,7 @@ export default function Technology() {
         </h3>
         <span>Roadmap — not a currently available software product</span>
       </div>
+      */}
     </section>
   );
 }

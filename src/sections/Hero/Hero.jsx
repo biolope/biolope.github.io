@@ -16,7 +16,7 @@ export default function Hero() {
             Explore the system
           </a>
           <a className="textLink" href="#impact">
-            View the evidence <span aria-hidden="true">↘</span>
+            See the impact <span aria-hidden="true">↘</span>
           </a>
         </div>
       </div>

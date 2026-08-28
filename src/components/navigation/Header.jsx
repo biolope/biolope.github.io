@@ -15,14 +15,14 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    const sectionIds = [...navigation.map((item) => item.href.slice(1)), "contact"];
+    const sectionIds = ["top", ...navigation.map((item) => item.href.slice(1)), "contact"];
     const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) setActiveSection(visible.target.id);
+        if (visible) setActiveSection(visible.target.id === "top" ? "" : visible.target.id);
       },
       { rootMargin: "-25% 0px -60%", threshold: [0, 0.2, 0.5] },
     );
@@ -41,7 +41,15 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <a className={styles.wordmark} href="#top" aria-label="BioLope home">
+      <a
+        className={styles.wordmark}
+        href="#top"
+        aria-label="BioLope home"
+        onClick={() => {
+          setActiveSection("");
+          setMenuOpen(false);
+        }}
+      >
         BioLope
       </a>
       <button

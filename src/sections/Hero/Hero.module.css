@@ -124,6 +124,11 @@
     padding-top: clamp(1.5rem, 3vh, 2.5rem);
   }
 
+  .imageWrap img {
+    transform: scale(1.08);
+    transform-origin: 60% center;
+  }
+
   .content h1 {
     margin-bottom: 1rem;
     font-size: clamp(3.6rem, 5vw, 6.1rem);

@@ -165,8 +165,13 @@
     position: relative;
     inset: auto;
     order: 2;
-    min-height: 62svh;
+    min-height: 0;
     margin: 0 calc(var(--page-gutter) * -1);
+  }
+
+  .imageWrap img {
+    display: block;
+    height: auto;
   }
 
   .imageWrap::after {

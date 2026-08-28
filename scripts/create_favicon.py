@@ -51,7 +51,7 @@ TEXT_COLOR = "#FFFFFF"
 FONT_PATH = r"C:\Windows\Fonts\times.ttf"
 
 # Schriftgröße bezogen auf MASTER_SIZE
-FONT_SIZE = 150
+FONT_SIZE = 180
 
 # Größe des Ausgangsbildes.
 # 256 px ist für Favicons sinnvoll.
@@ -65,7 +65,7 @@ MASTER_SIZE = 256
 # 64  = stark gerundet
 # 128 = maximal gerundet
 #
-CORNER_RADIUS = 50
+CORNER_RADIUS = 40
 
 # Größen, die innerhalb der ICO-Datei gespeichert werden
 ICO_SIZES = [

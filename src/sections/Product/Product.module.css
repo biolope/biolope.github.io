@@ -80,12 +80,9 @@
     margin-top: clamp(1.5rem, 2.5vh, 2rem);
   }
 
-  .mainImage {
-    height: clamp(17rem, 35vh, 24rem);
-  }
-
+  .mainImage,
   .detailImage {
-    height: clamp(17rem, 35vh, 24rem);
+    height: clamp(17rem, 38vh, 24rem);
   }
 
   .features {

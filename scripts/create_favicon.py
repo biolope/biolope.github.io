@@ -36,8 +36,8 @@ from PIL import Image, ImageDraw, ImageFont
 TEXT = "BL"
 
 # Farben
-BACKGROUND_COLOR = "#1E1E1E"
-TEXT_COLOR = "#FFFFFF"
+BACKGROUND_COLOR = "#ded3c2"
+TEXT_COLOR = "#143e33"
 
 # Schriftart
 # Hier den vollständigen Pfad zu einer .ttf- oder .otf-Datei angeben.

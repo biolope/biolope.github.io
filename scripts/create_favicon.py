@@ -77,8 +77,9 @@ ICO_SIZES = [
     (256, 256),
 ]
 
-# Exportordner
-EXPORT_DIR = r""
+# Exportordner der Website
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+EXPORT_DIR = PROJECT_ROOT / "public"
 
 # Dateiname
 FILE_NAME = "favicon.ico"
@@ -183,7 +184,7 @@ def create_favicon():
     # Exportpfad vorbereiten
     # --------------------------------------------------------
 
-    export_dir = Path(EXPORT_DIR)
+    export_dir = EXPORT_DIR
     export_dir.mkdir(parents=True, exist_ok=True)
 
     output_file = export_dir / FILE_NAME

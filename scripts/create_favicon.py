@@ -48,7 +48,7 @@ TEXT_COLOR = "#FFFFFF"
 # macOS-Beispiel:
 # FONT_PATH = "/System/Library/Fonts/Helvetica.ttc"
 #
-FONT_PATH = r"C:\Windows\Fonts\arialbd.ttf"
+FONT_PATH = r"C:\Pfad\zu\IvyPrestoDisplay-Regular.ttf"
 
 # Schriftgröße bezogen auf MASTER_SIZE
 FONT_SIZE = 150

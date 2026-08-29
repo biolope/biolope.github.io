@@ -24,7 +24,14 @@ export default function Impact() {
               className={styles.evidenceFigure}
               src="/content/impact/thermal/measured-facade-reference.webp"
               alt="Thermal measurement comparing the cooler ceramic demonstrator with the warmer flat reference wall"
-              credit="Measured in August 2025 · Larikova et al. · Preprint under review"
+              credit={
+                <>
+                  Measured in August 2025 · Larikova et al. ·{" "}
+                  <a href="https://doi.org/10.2139/ssrn.6481480" target="_blank" rel="noreferrer">
+                    Preprint under review ↗
+                  </a>
+                </>
+              }
             />
           </Reveal>
         </article>

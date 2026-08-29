@@ -40,7 +40,7 @@ export default function Impact() {
           <div className={styles.habitatImages}>
             <Reveal>
               <Figure
-                src="/content/impact/habitat/facade-habitat-detail.webp"
+                src="/content/impact/habitat/facade-habitat-detail-cropped.webp"
                 alt="Ceramic façade elements with integrated nesting and shelter openings"
                 credit="Munich demonstrator"
               />

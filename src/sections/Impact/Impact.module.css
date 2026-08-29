@@ -111,6 +111,7 @@
 
 .habitatImages > div:first-child img {
   height: min(65vw, 46rem);
+  object-position: left center;
 }
 
 .habitatImages > div:last-child img {

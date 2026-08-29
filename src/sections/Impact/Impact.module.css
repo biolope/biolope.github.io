@@ -109,16 +109,32 @@
   grid-template-columns: 1fr 0.78fr;
 }
 
-.habitatImages > div:first-child {
+.habitatImages > div:first-child img {
   height: min(65vw, 46rem);
 }
 
-.habitatImages > div:last-child {
+.habitatImages > div:last-child img {
   height: min(48vw, 34rem);
 }
 
 .habitatImages figure {
-  height: 100%;
+  height: auto;
+  overflow: visible;
+  background: transparent;
+}
+
+.habitatImages figcaption {
+  position: static;
+  right: auto;
+  bottom: auto;
+  max-width: none;
+  margin-top: 0.55rem;
+  padding: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.62rem;
+  line-height: 1.4;
+  text-align: right;
 }
 
 .habitatConcept img {
@@ -166,7 +182,7 @@
 
 @media (min-width: 1100px) and (min-height: 760px) {
   .section {
-    --impact-image-height: min(34vh, 19rem);
+    --impact-image-height: min(42vh, 23rem);
     min-height: calc(100svh - var(--nav-height));
     padding-top: clamp(2rem, 3.5vh, 3rem);
     padding-bottom: clamp(1.25rem, 2.5vh, 2rem);
@@ -186,7 +202,7 @@
     display: grid;
     margin-top: clamp(1.25rem, 2.5vh, 1.75rem);
     gap: clamp(2rem, 3vw, 3.5rem);
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
   }
 
   .thermal,
@@ -199,11 +215,16 @@
   }
 
   .thermal {
-    grid-template-columns: minmax(12rem, 0.9fr) minmax(0, 1.1fr);
+    grid-template-columns: minmax(12rem, 0.68fr) minmax(0, 1.32fr);
   }
 
   .metricValue {
     font-size: clamp(4.8rem, 6vw, 7rem);
+  }
+
+  .thermal .metricValue {
+    font-size: clamp(4.8rem, 5.6vw, 6.5rem);
+    white-space: nowrap;
   }
 
   .metricLabel {
@@ -234,7 +255,7 @@
   }
 
   .habitat {
-    grid-template-columns: minmax(0, 1.28fr) minmax(14rem, 0.72fr);
+    grid-template-columns: minmax(0, 1.22fr) minmax(14rem, 0.78fr);
   }
 
   .habitatImages {
@@ -253,22 +274,9 @@
     background: transparent;
   }
 
-  .habitatImages img {
+  .habitatImages > div:first-child img,
+  .habitatImages > div:last-child img {
     height: var(--impact-image-height);
-  }
-
-  .habitatImages figcaption {
-    position: static;
-    right: auto;
-    bottom: auto;
-    max-width: none;
-    margin-top: 0.55rem;
-    padding: 0;
-    background: transparent;
-    color: var(--ink-soft);
-    font-size: 0.62rem;
-    line-height: 1.4;
-    text-align: right;
   }
 
   .habitatConcept img {
@@ -357,7 +365,12 @@
 
   .habitatImages > div:first-child,
   .habitatImages > div:last-child {
-    height: 65svh;
+    height: auto;
+  }
+
+  .habitatImages > div:first-child img,
+  .habitatImages > div:last-child img {
+    height: min(65svh, 32rem);
   }
 
   .habitatImages > div:last-child {

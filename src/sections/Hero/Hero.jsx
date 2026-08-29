@@ -13,7 +13,7 @@ export default function Hero() {
         <p className={styles.lead}>{heroContent.body}</p>
         <div className={styles.actions}>
           <a className="button buttonPrimary" href="#product">
-            Explore the system
+            Explore the product
           </a>
           <a className="textLink" href="#impact">
             See the impact <span aria-hidden="true">↘</span>

@@ -290,8 +290,8 @@
   }
 
   .habitatConcept img {
-    object-fit: cover;
-    object-position: center 45%;
+    object-fit: contain;
+    object-position: center;
     transform: none;
   }
 

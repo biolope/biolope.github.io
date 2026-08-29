@@ -32,6 +32,7 @@
   color: #9cbcaf;
   font-family: var(--font-display);
   font-size: 1.1rem;
+  font-weight: var(--font-display-weight);
 }
 
 .stepLabel {
@@ -49,7 +50,7 @@
   color: white;
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 4.1vw, 5rem);
-  font-weight: 520;
+  font-weight: var(--font-display-weight);
   letter-spacing: -0.052em;
   line-height: 0.98;
 }
@@ -308,6 +309,7 @@
   .mobileCopy > span {
     color: #9cbcaf;
     font-family: var(--font-display);
+    font-weight: var(--font-display-weight);
   }
 
   .mobileCopy p:first-child {
@@ -324,7 +326,7 @@
     color: white;
     font-family: var(--font-display);
     font-size: 2rem;
-    font-weight: 520;
+    font-weight: var(--font-display-weight);
     line-height: 1;
   }
 

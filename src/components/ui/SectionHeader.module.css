@@ -15,7 +15,7 @@
   color: var(--green);
   font-family: var(--font-display);
   font-size: clamp(3rem, 6vw, 6.8rem);
-  font-weight: 520;
+  font-weight: var(--font-display-weight);
   letter-spacing: -0.058em;
   line-height: 0.94;
 }

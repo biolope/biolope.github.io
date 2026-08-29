@@ -11,8 +11,10 @@
   --line: rgba(20, 62, 51, 0.2);
   --nav-height: 4.75rem;
   --page-gutter: clamp(1.25rem, 4vw, 4.5rem);
-  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --font-sans: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-display: var(--font-sans);
+  --font-display-weight: 520;
   color: var(--ink);
   background: var(--paper);
   font-family: var(--font-sans);

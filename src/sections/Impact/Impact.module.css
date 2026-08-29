@@ -15,7 +15,7 @@
   color: var(--thermal);
   font-family: var(--font-display);
   font-size: clamp(5rem, 11vw, 11rem);
-  font-weight: 520;
+  font-weight: var(--font-display-weight);
   letter-spacing: -0.07em;
   line-height: 0.8;
 }
@@ -149,7 +149,7 @@
   color: var(--green);
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 4.5vw, 4.8rem);
-  font-weight: 520;
+  font-weight: var(--font-display-weight);
   letter-spacing: -0.05em;
   line-height: 1;
 }
@@ -224,7 +224,7 @@
   }
 
   .thermal .metricValue {
-    font-size: clamp(4.8rem, 5.6vw, 6.5rem);
+    font-size: clamp(4.6rem, 5.15vw, 6rem);
     white-space: nowrap;
   }
 
@@ -245,14 +245,23 @@
     line-height: 1.42;
   }
 
-  .thermalFigure,
+  .thermalFigure {
+    width: fit-content;
+    max-width: 100%;
+    min-height: 0;
+    justify-self: end;
+  }
+
   .thermalFigure figure {
     width: 100%;
     min-height: 0;
   }
 
   .evidenceFigure img {
+    width: auto;
+    max-width: 100%;
     height: var(--impact-image-height) !important;
+    background: transparent;
   }
 
   .habitat {

@@ -42,13 +42,14 @@ TEXT_COLOR = "#143e33"
 # Schriftart
 # Hier den vollständigen Pfad zu einer .ttf- oder .otf-Datei angeben.
 #
-# Windows-Beispiel:
-# FONT_PATH = r"C:\Windows\Fonts\arialbd.ttf"
+# Alternative Serifenschrift passend zur urspruenglichen Display-Typografie:
+# FONT_PATH = r"C:\Windows\Fonts\pala.ttf"
 #
-# macOS-Beispiel:
+# Aktive Sans-Serif-Schrift passend zur Website unter Windows:
+FONT_PATH = r"C:\Windows\Fonts\arial.ttf"
+#
+# Entsprechende Sans-Serif-Option unter macOS:
 # FONT_PATH = "/System/Library/Fonts/Helvetica.ttc"
-#
-FONT_PATH = r"C:\Windows\Fonts\times.ttf"
 
 # Schriftgröße bezogen auf MASTER_SIZE
 FONT_SIZE = 180

@@ -16,7 +16,7 @@ export default function Technology() {
 
       <Reveal className={styles.robotVisual}>
         <Figure
-          src="/content/technology/manufacturing/robotic-printing.webp"
+          src="/content/technology/manufacturing/robotic-printing-no-person.webp"
           alt="Robotic ceramic 3D printing of a project-specific façade element"
         />
       </Reveal>

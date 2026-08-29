@@ -41,10 +41,10 @@
   },
   {
     "id": "robotic-printing",
-    "publicFile": "/content/technology/manufacturing/robotic-printing.webp",
+    "publicFile": "/content/technology/manufacturing/robotic-printing-no-person.webp",
     "source": "pitch_data/press-package/Fotos/DSC_8311.jpg",
     "credit": "Julia Larikova",
-    "kind": "photograph",
+    "kind": "photograph · right crop excludes person",
     "status": "real"
   },
   {

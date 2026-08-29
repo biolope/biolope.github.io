@@ -292,6 +292,7 @@
 
   .additionalImpact {
     margin-top: clamp(1rem, 2vh, 1.5rem);
+    grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
   }
 
   .material,

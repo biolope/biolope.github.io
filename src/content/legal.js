@@ -10,11 +10,16 @@ export const imprintContent = {
 };
 
 export const privacyContent = {
-  lastUpdated: "27 August 2026",
+  lastUpdated: "30 August 2026",
   githubPagesInformation:
     "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
   githubPrivacy:
     "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+  cloudflareAnalyticsInformation:
+    "https://developers.cloudflare.com/web-analytics/about/",
+  cloudflareDataCollection:
+    "https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/",
+  cloudflarePrivacy: "https://www.cloudflare.com/privacypolicy/",
   supervisoryAuthority: {
     name: "Bavarian State Office for Data Protection Supervision (BayLDA)",
     street: "Promenade 18",

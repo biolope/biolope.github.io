@@ -69,11 +69,52 @@ export default function PrivacyPage() {
       </section>
 
       <section className={styles.section}>
-        <h2>4. Cookies and analytics</h2>
+        <h2>4. Cloudflare Web Analytics</h2>
         <p>
-          We do not use our own cookies, analytics services, advertising trackers or
-          comparable tracking technologies on this website. No consent banner is therefore
-          provided in the current version of the website.
+          We use Cloudflare Web Analytics, a privacy-focused web analytics service provided
+          by Cloudflare, Inc. The service helps us understand aggregated website usage and
+          technical performance. The information evaluated may include page views,
+          referring websites, country, device type, browser, operating system and page-load
+          performance.
+        </p>
+        <p>
+          Cloudflare states that Web Analytics does not use cookies, local storage or
+          fingerprinting to track individual visitors. The source IP address is necessarily
+          received as part of the network connection, but Cloudflare states that it is
+          discarded at the nearest data centre and is not stored in its core databases or
+          logs. We receive aggregated reports and do not create individual visitor profiles.
+        </p>
+        <p>
+          To the extent that this processing is attributable to us and involves personal
+          data, it is based on Article 6(1)(f) GDPR. Our legitimate interest is to understand
+          the reach, use and technical performance of this website and to improve it
+          accordingly. Because no information is stored on or retrieved from the visitor’s
+          device for analytics purposes, we do not provide a consent banner for Cloudflare
+          Web Analytics.
+        </p>
+        <p>
+          Cloudflare may process technical data outside the European Economic Area. Further
+          information is available in the {" "}
+          <a
+            href={privacyContent.cloudflareAnalyticsInformation}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Cloudflare Web Analytics documentation
+          </a>
+          , the {" "}
+          <a
+            href={privacyContent.cloudflareDataCollection}
+            target="_blank"
+            rel="noreferrer"
+          >
+            information on data collection
+          </a>{" "}
+          and the {" "}
+          <a href={privacyContent.cloudflarePrivacy} target="_blank" rel="noreferrer">
+            Cloudflare Privacy Policy
+          </a>
+          .
         </p>
       </section>
 
@@ -93,7 +134,10 @@ export default function PrivacyPage() {
           Email correspondence is retained only for as long as necessary to handle the
           enquiry and any resulting cooperation, unless statutory retention obligations
           require longer storage. The retention of technical data processed by GitHub is
-          governed by GitHub’s applicable policies.
+          governed by GitHub’s applicable policies. Cloudflare analytics data is made
+          available to us only in aggregated form and is retained in accordance with
+          Cloudflare’s applicable policies; we do not maintain a separate raw analytics
+          dataset.
         </p>
       </section>
 

@@ -3,7 +3,7 @@ export const founders = [
     name: "Julia Larikova",
     portrait: "/content/team/julia.webp",
     title: "CEO",
-    role: "Strategy & Product Design",
+    role: "Strategy & Product Development",
     bio: "Architect and researcher specializing in computational design, ceramic 3D printing and façade development.",
   },
   {

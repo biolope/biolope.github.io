@@ -55,6 +55,13 @@
   line-height: 1;
 }
 
+@media (min-width: 1001px) {
+  .founder h3 {
+    font-size: clamp(1.4rem, 2.15vw, 2.35rem);
+    white-space: nowrap;
+  }
+}
+
 .title {
   margin: 0.9rem 0 0;
   color: var(--green-bright);

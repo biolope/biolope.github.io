@@ -20,14 +20,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <dl className={styles.metrics} aria-label="Project highlights">
-        {heroContent.metrics.map((metric) => (
-          <div key={metric.label}>
-            <dt>{metric.value}</dt>
-            <dd>{metric.label}</dd>
-          </div>
-        ))}
-      </dl>
     </section>
   );
 }

@@ -58,34 +58,34 @@
   {
     "id": "julia-portrait",
     "publicFile": "/content/team/julia.webp",
-    "source": "pitch_data/Julia.jpg",
+    "source": "pitch_data/Bilder_Team/Julia.JPG",
     "credit": "Team-supplied portrait",
-    "kind": "temporary portrait of Julia Larikova",
-    "status": "temporary"
+    "kind": "team portrait of Julia Larikova",
+    "status": "current"
   },
   {
     "id": "niklas-portrait",
     "publicFile": "/content/team/niklas.webp",
-    "source": "pitch_data/Niklas.jpg",
+    "source": "pitch_data/Bilder_Team/Niklas.JPG",
     "credit": "Team-supplied portrait",
-    "kind": "temporary portrait of Niklas Ebert",
-    "status": "temporary"
+    "kind": "team portrait of Niklas Ebert",
+    "status": "current"
   },
   {
     "id": "martin-portrait",
     "publicFile": "/content/team/martin.webp",
-    "source": "pitch_data/Martin.jfif",
+    "source": "pitch_data/Bilder_Team/Martin.JPG",
     "credit": "Team-supplied portrait",
-    "kind": "temporary portrait of Martin Slepicka",
-    "status": "temporary"
+    "kind": "team portrait of Martin Slepicka",
+    "status": "current"
   },
   {
     "id": "alex-portrait",
     "publicFile": "/content/team/alex.webp",
-    "source": "pitch_data/Alex.webp",
+    "source": "pitch_data/Bilder_Team/Alex.JPG",
     "credit": "Team-supplied portrait",
-    "kind": "temporary portrait of Alexander Haynack",
-    "status": "temporary"
+    "kind": "team portrait of Alexander Haynack",
+    "status": "current"
   },
   {
     "id": "bird-habitat-axonometry",

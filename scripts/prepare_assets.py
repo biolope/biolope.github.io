@@ -67,36 +67,60 @@ def main() -> None:
         ("hero/demonstrator-hero.webp", "DSC_9596 Kopie 2.jpg", 2400),
         ("product/demonstrator-summer.webp", "DSC_7535 Kopie.jpg", 2000),
         ("product/facade-depth-detail.webp", "DSC_7608 Kopie 2.jpg", 1400),
-        ("impact/habitat/facade-habitat-detail.webp", "DSC_9613 Kopie.jpg", 1800),
+        (
+            "impact/habitat/facade-habitat-detail-cropped.webp",
+            "DSC_9613 Kopie.jpg",
+            1800,
+        ),
         ("validation/full-scale-demonstrator.webp", "DSC_9600 Kopie.jpg", 2200),
-        ("technology/manufacturing/robotic-printing.webp", "DSC_8311.jpg", 1800),
+        (
+            "technology/manufacturing/robotic-printing-no-person.webp",
+            "DSC_8311.jpg",
+            1800,
+        ),
         ("contact/demonstrator-street-view.webp", "DSC_9975 Kopie.jpg", 2000),
     ]
+    curated_photo_kinds = {
+        "impact/habitat/facade-habitat-detail-cropped.webp": (
+            "photograph · left crop excludes most street and parked cars"
+        ),
+        "technology/manufacturing/robotic-printing-no-person.webp": (
+            "photograph · right crop excludes person"
+        ),
+    }
+    curated_photo_ids = {
+        "impact/habitat/facade-habitat-detail-cropped.webp": "facade-habitat-detail",
+        "technology/manufacturing/robotic-printing-no-person.webp": "robotic-printing",
+    }
 
     manifest = []
     for public_path, source_name, max_width in photo_assets:
         source_path = photos / source_name
         destination = OUTPUT / public_path
-        save_webp(source_path, destination, max_width)
+        if public_path in curated_photo_kinds:
+            if not destination.exists():
+                raise FileNotFoundError(f"Missing approved cropped asset: {destination}")
+        else:
+            save_webp(source_path, destination, max_width)
         manifest.append(
             {
-                "id": Path(public_path).stem,
+                "id": curated_photo_ids.get(public_path, Path(public_path).stem),
                 "publicFile": f"/content/{public_path}",
                 "source": str(source_path.relative_to(ROOT)).replace("\\", "/"),
                 "credit": "Julia Larikova",
-                "kind": "photograph",
+                "kind": curated_photo_kinds.get(public_path, "photograph"),
                 "status": "real",
             }
         )
 
     team_assets = [
-        ("team/julia.webp", "Julia.jpg", "Julia Larikova"),
-        ("team/niklas.webp", "Niklas.jpg", "Niklas Ebert"),
-        ("team/martin.webp", "Martin.jfif", "Martin Slepicka"),
-        ("team/alex.webp", "Alex.webp", "Alexander Haynack"),
+        ("team/julia.webp", "Julia.JPG", "Julia Larikova"),
+        ("team/niklas.webp", "Niklas.JPG", "Niklas Ebert"),
+        ("team/martin.webp", "Martin.JPG", "Martin Slepicka"),
+        ("team/alex.webp", "Alex.JPG", "Alexander Haynack"),
     ]
     for public_path, source_name, person in team_assets:
-        source_path = SOURCE / source_name
+        source_path = SOURCE / "Bilder_Team" / source_name
         destination = OUTPUT / public_path
         save_webp(source_path, destination, 900, 90)
         manifest.append(
@@ -105,8 +129,8 @@ def main() -> None:
                 "publicFile": f"/content/{public_path}",
                 "source": str(source_path.relative_to(ROOT)).replace("\\", "/"),
                 "credit": "Team-supplied portrait",
-                "kind": f"temporary portrait of {person}",
-                "status": "temporary",
+                "kind": f"team portrait of {person}",
+                "status": "current",
             }
         )
 

@@ -41,7 +41,7 @@
   border: 1px solid var(--line);
   border-radius: 50%;
   box-shadow: 0 1rem 2.5rem rgba(20, 62, 51, 0.12);
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
